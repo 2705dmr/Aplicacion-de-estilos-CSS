@@ -2,173 +2,147 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio - ExceptionLog</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-<header class="barra">
-  <a class="logo" href="index.html"><span class="logo-icono">EX</span>Exception<span class="logo-azul">Log</span></a>
-  <nav class="menu">
-    <a class="activo" href="index.html">Inicio</a>
-    <a href="categorias.html">Categorías</a>
-    <a href="errores.html">Errores</a>
-    <a href="foro.html">Foro</a>
-    <a href="perfil.html">Perfil</a>
+<header>
+  <h2>ExceptionLog</h2>
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="categorias.html">Categorías</a> |
+    <a href="errores.html">Errores</a> |
+    <a href="foro.html">Foro</a> |
+    <a href="perfil.html">Perfil</a> |
+    <a href="iniciar-sesion.html">Iniciar sesión</a> |
+    <a href="registro.html">Registrarse</a>
   </nav>
-  <div class="acciones">
-    <a class="boton boton-claro" href="iniciar-sesion.html">Iniciar sesión</a>
-    <a class="boton boton-azul" href="registro.html">Registrarse</a>
-  </div>
+  <hr>
 </header>
 
-<main class="contenedor">
-
-  <section class="hero">
-    <div>
-      <p class="hero-codigo">// bienvenido</p>
-      <h1>ExceptionLog</h1>
-      <p class="hero-texto">El banco de experiencias sobre errores de programación.</p>
-    </div>
-    <div class="acciones">
-      <a class="boton boton-oscuro" href="iniciar-sesion.html">Iniciar sesión</a>
-      <a class="boton boton-azul" href="registro.html">Registrarse</a>
-    </div>
-  </section>
-
-  <section class="estadisticas">
-    <div class="tarjeta dato"><strong>247</strong><span>Errores documentados</span></div>
-    <div class="tarjeta dato"><strong>1,438</strong><span>Soluciones aportadas</span></div>
-    <div class="tarjeta dato"><strong>12</strong><span>Lenguajes cubiertos</span></div>
-    <div class="tarjeta dato"><strong>4.2k</strong><span>Devs activos</span></div>
-  </section>
+<main>
 
   <section>
-    <h2 class="titulo-seccion">Categorías frecuentes</h2>
-    <div class="categorias">
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">⚡</span><b>TypeError</b><small>39 casos</small></a>
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">∅</span><b>NullPointer</b><small>58 casos</small></a>
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">∞</span><b>StackOverflow</b><small>27 casos</small></a>
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">⛔</span><b>NetworkError</b><small>24 casos</small></a>
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">💥</span><b>RuntimeError</b><small>44 casos</small></a>
-      <a class="tarjeta categoria" href="categorias.html"><span class="icono">🔒</span><b>AuthError</b><small>14 casos</small></a>
-    </div>
+    <p>// bienvenido</p>
+    <h1>ExceptionLog</h1>
+    <p>El banco de experiencias sobre errores de programación.</p>
+    <p><a href="iniciar-sesion.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a></p>
   </section>
 
-  <div class="columnas">
+  <hr>
 
-    <div class="principal">
+  <section>
+    <h2>Estadísticas</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <td><b>247</b><br>Errores documentados</td>
+        <td><b>1,438</b><br>Soluciones aportadas</td>
+        <td><b>12</b><br>Lenguajes cubiertos</td>
+        <td><b>4.2k</b><br>Devs activos</td>
+      </tr>
+    </table>
+  </section>
 
-      <section>
-        <div class="encabezado-seccion">
-          <h2 class="titulo-seccion">Errores recientes</h2>
-          <a class="enlace" href="errores.html">Ver todos →</a>
-        </div>
+  <hr>
 
-        <div class="errores">
+  <section>
+    <h2>Categorías frecuentes</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>⚡ <b>TypeError</b><br>39 casos</td>
+        <td>∅ <b>NullPointer</b><br>58 casos</td>
+        <td>∞ <b>StackOverflow</b><br>27 casos</td>
+        <td>⛔ <b>NetworkError</b><br>24 casos</td>
+        <td>💥 <b>RuntimeError</b><br>44 casos</td>
+        <td>🔒 <b>AuthError</b><br>14 casos</td>
+      </tr>
+    </table>
+  </section>
 
-          <article class="tarjeta error error-critico">
-            <p class="etiquetas"><span class="etiqueta rojo">CRÍTICO</span><span class="etiqueta amarillo">JAVASCRIPT</span><span class="etiqueta gris">REACT</span></p>
-            <h3>Cannot read properties of undefined (reading 'map')</h3>
-            <p>Ocurre cuando se itera sobre una prop no inicializada. El componente renderiza antes de que los datos asincrónicos lleguen del API.</p>
-            <pre>TypeError: Cannot read properties of undefined (reading 'map')</pre>
-            <p class="pie-error"><span>▲ 89 &nbsp; 💬 12</span><span>@carlos_m · Hace 2 horas</span></p>
-          </article>
+  <hr>
 
-          <article class="tarjeta error error-critico">
-            <p class="etiquetas"><span class="etiqueta rojo">CRÍTICO</span><span class="etiqueta naranja">JAVA</span><span class="etiqueta gris">SPRING BOOT</span></p>
-            <h3>java.lang.NullPointerException al acceder a objeto remoto</h3>
-            <p>Se produce al invocar métodos de un servicio inyectado que no fue correctamente inicializado por el contenedor Spring.</p>
-            <pre>java.lang.NullPointerException</pre>
-            <p class="pie-error"><span>▲ 74 &nbsp; 💬 8</span><span>@ana_dev · Hace 5 horas</span></p>
-          </article>
+  <section>
+    <h2>Errores recientes</h2>
+    <p><a href="errores.html">Ver todos →</a></p>
 
-          <article class="tarjeta error error-normal">
-            <p class="etiquetas"><span class="etiqueta naranja">ERROR</span><span class="etiqueta azul">PYTHON</span><span class="etiqueta gris">DJANGO</span></p>
-            <h3>RecursionError: maximum recursion depth exceeded</h3>
-            <p>La función recursiva carece de caso base correcto o los datos generan ciclos. Python limita la pila a 1000 llamadas por defecto.</p>
-            <pre>RecursionError: maximum recursion depth exceeded
+    <article>
+      <p><b>CRÍTICO</b> | JAVASCRIPT | REACT</p>
+      <h3>Cannot read properties of undefined (reading 'map')</h3>
+      <p>Ocurre cuando se itera sobre una prop no inicializada. El componente renderiza antes de que los datos asincrónicos lleguen del API.</p>
+      <pre>TypeError: Cannot read properties of undefined (reading 'map')</pre>
+      <p>▲ 89 | 💬 12 | @carlos_m · Hace 2 horas</p>
+    </article>
+    <hr>
+
+    <article>
+      <p><b>CRÍTICO</b> | JAVA | SPRING BOOT</p>
+      <h3>java.lang.NullPointerException al acceder a objeto remoto</h3>
+      <p>Se produce al invocar métodos de un servicio inyectado que no fue correctamente inicializado por el contenedor Spring.</p>
+      <pre>java.lang.NullPointerException</pre>
+      <p>▲ 74 | 💬 8 | @ana_dev · Hace 5 horas</p>
+    </article>
+    <hr>
+
+    <article>
+      <p><b>ERROR</b> | PYTHON | DJANGO</p>
+      <h3>RecursionError: maximum recursion depth exceeded</h3>
+      <p>La función recursiva carece de caso base correcto o los datos generan ciclos. Python limita la pila a 1000 llamadas por defecto.</p>
+      <pre>RecursionError: maximum recursion depth exceeded
   File 'tree.py', line 23, in traverse</pre>
-            <p class="pie-error"><span>▲ 61 &nbsp; 💬 6</span><span>@luisa_py · Ayer</span></p>
-          </article>
+      <p>▲ 61 | 💬 6 | @luisa_py · Ayer</p>
+    </article>
+    <hr>
 
-          <article class="tarjeta error error-normal">
-            <p class="etiquetas"><span class="etiqueta naranja">ERROR</span><span class="etiqueta verde">NODE.JS</span><span class="etiqueta gris">EXPRESS</span></p>
-            <h3>ECONNREFUSED 127.0.0.1:5432 - PostgreSQL no disponible</h3>
-            <p>El proceso intenta conectarse a Postgres antes de que el servicio esté listo. Frecuente en entornos Docker con contenedores dependientes.</p>
-            <pre>Error: connect ECONNREFUSED 127.0.0.1:5432
+    <article>
+      <p><b>ERROR</b> | NODE.JS | EXPRESS</p>
+      <h3>ECONNREFUSED 127.0.0.1:5432 - PostgreSQL no disponible</h3>
+      <p>El proceso intenta conectarse a Postgres antes de que el servicio esté listo. Frecuente en entornos Docker con contenedores dependientes.</p>
+      <pre>Error: connect ECONNREFUSED 127.0.0.1:5432
   at TCPConnectWrap.afterConnect</pre>
-            <p class="pie-error"><span>▲ 55 &nbsp; 💬 9</span><span>@roberto_be · Hace 2 días</span></p>
-          </article>
+      <p>▲ 55 | 💬 9 | @roberto_be · Hace 2 días</p>
+    </article>
+  </section>
 
-        </div>
-      </section>
+  <hr>
 
-      <section>
-        <div class="encabezado-seccion">
-          <h2 class="titulo-seccion">Discusiones activas</h2>
-          <a class="enlace" href="foro.html">Ver foro →</a>
-        </div>
+  <section>
+    <h2>Discusiones activas</h2>
+    <p><a href="foro.html">Ver foro →</a></p>
+    <ul>
+      <li>¿Cómo debuggear un memory leak en Node.js sin profiler?<br>NODE.JS | 💬 17 | ✓ RESUELTO</li>
+      <li>JWT expira pero el refresh token no funciona correctamente<br>TYPESCRIPT | 💬 9</li>
+      <li>Segmentation fault en C++ con punteros y vector dinámico<br>C++ | 💬 5</li>
+    </ul>
+  </section>
 
-        <ul class="discusiones">
-          <li class="tarjeta discusion">
-            <span class="burbuja">💬</span>
-            <div><b>¿Cómo debuggear un memory leak en Node.js sin profiler?</b>
-              <p><span class="etiqueta azul">NODE.JS</span> 💬 17 <span class="etiqueta verde">✓ RESUELTO</span></p></div>
-          </li>
-          <li class="tarjeta discusion">
-            <span class="burbuja">💬</span>
-            <div><b>JWT expira pero el refresh token no funciona correctamente</b>
-              <p><span class="etiqueta azul">TYPESCRIPT</span> 💬 9</p></div>
-          </li>
-          <li class="tarjeta discusion">
-            <span class="burbuja">💬</span>
-            <div><b>Segmentation fault en C++ con punteros y vector dinámico</b>
-              <p><span class="etiqueta azul">C++</span> 💬 5</p></div>
-          </li>
-        </ul>
-      </section>
+  <hr>
 
-    </div>
+  <aside>
+    <h2>Acceso rápido</h2>
+    <table border="1" cellpadding="8">
+      <tr><td>⚡ TypeError<br>39</td><td>∅ NullPointer<br>58</td></tr>
+      <tr><td>∞ StackOverflow<br>27</td><td>⛔ NetworkError<br>24</td></tr>
+      <tr><td>💥 RuntimeError<br>44</td><td>🔒 AuthError<br>14</td></tr>
+    </table>
 
-    <aside class="lateral">
+    <h2>Tu actividad</h2>
+    <ul>
+      <li>Errores reportados: <b>7</b></li>
+      <li>Hilos participados: <b>12</b></li>
+      <li>Soluciones aportadas: <b>24</b></li>
+    </ul>
 
-      <div class="tarjeta panel">
-        <h2>Acceso rápido</h2>
-        <div class="rapido">
-          <a href="categorias.html">⚡<b>TypeError</b><small>39</small></a>
-          <a href="categorias.html">∅<b>NullPointer</b><small>58</small></a>
-          <a href="categorias.html">∞<b>StackOverflow</b><small>27</small></a>
-          <a href="categorias.html">⛔<b>NetworkError</b><small>24</small></a>
-          <a href="categorias.html">💥<b>RuntimeError</b><small>44</small></a>
-          <a href="categorias.html">🔒<b>AuthError</b><small>14</small></a>
-        </div>
-      </div>
+    <h2>// TIP DEL DÍA</h2>
+    <p>Usa <code>console.trace()</code> para ver la pila de llamadas exacta en el momento del error.</p>
 
-      <div class="tarjeta panel">
-        <h2>Tu actividad</h2>
-        <ul class="actividad">
-          <li>Errores reportados <b>7</b></li>
-          <li>Hilos participados <b>12</b></li>
-          <li>Soluciones aportadas <b>24</b></li>
-        </ul>
-      </div>
-
-      <div class="tip">
-        <h2>// TIP DEL DÍA</h2>
-        <p>Usa <code>console.trace()</code> para ver la pila de llamadas exacta en el momento del error.</p>
-      </div>
-
-      <a class="boton boton-azul boton-ancho" href="errores.html">+ Reportar error</a>
-
-    </aside>
-
-  </div>
+    <p><a href="errores.html"><b>+ Reportar error</b></a></p>
+  </aside>
 
 </main>
 
-<footer class="pie">
+<footer>
+  <hr>
   <p>ExceptionLog - El banco de experiencias sobre errores de programación.</p>
 </footer>
 
